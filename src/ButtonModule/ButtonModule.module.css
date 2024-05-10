@@ -1,0 +1,9 @@
+.buttonModule{
+    background-color: hsl(303, 100%, 50%);
+    color:#ffffff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
