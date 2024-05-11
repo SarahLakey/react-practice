@@ -14,7 +14,11 @@ function App() {
 
       <ButtonInline/>
       <div>
-        <Student name="Shayne" age="18" isStudent={true}/>
+        <Student name="Shayne" age={1.5} isStudent={true}/>
+        <Student name="Skylar" age={0} isStudent={false}/>
+        <Student name="Jax" age={11} isStudent={false}/>
+        <Student name="Kora" age={6} isStudent={true}/>
+
       </div>
     </>
   )
