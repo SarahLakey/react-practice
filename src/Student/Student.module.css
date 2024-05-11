@@ -1,0 +1,14 @@
+.student{
+    border: 1px solid rgba(16, 4, 82, 0.351);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(274, 98%, 18%, 0.501);
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    max-width: 250px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.student p{
+    margin: 0;
+}
