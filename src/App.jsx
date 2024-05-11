@@ -8,8 +8,9 @@ function App() {
 
   return (
     <>
-     <Button/>
-     <ButtonModule/>
+     <Button/> 
+     <br/>
+     <ButtonModule/>  &nbsp;     
      <ButtonInline/>
     </>
   )
