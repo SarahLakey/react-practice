@@ -2,12 +2,13 @@ import Card from "./Card/Card"
 import Student from "./Student/Student"
 import './App.css'
 import ButtonInline from "./ButtonInline"
+import UserGreeting from './UserGreeting/UserGreeting.jsx'
 
 function App() {
 
   return (
     <>
-
+      <UserGreeting isLoggedIn={true} username="Sarah"/>
       <div>
           <Card/>
       </div>
