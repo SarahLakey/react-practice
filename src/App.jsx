@@ -18,7 +18,7 @@ function App() {
         <Student name="Skylar" age={0} isStudent={false}/>
         <Student name="Jax" age={11} isStudent={false}/>
         <Student name="Kora" age={6} isStudent={true}/>
-        <Student age={10}/>
+        {/* <Student age={10}/> */}
 
       </div>
     </>

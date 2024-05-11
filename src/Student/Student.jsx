@@ -17,10 +17,12 @@ Student.propTypes={
     isStudent: PropTypes.bool,
 }
 
-Student.defaultProps = {
-    name: "Guest",
-    age: 0,
-    isStudent: false,
-}
+//error message in the console states that defaultProps will be removed in future release
+
+// Student.defaultProps = {
+//     name: "Guest",
+//     age: 0,
+//     isStudent: false,
+// }
 
 export default Student
