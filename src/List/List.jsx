@@ -1,20 +1,43 @@
 
-function List(){
-    
-    //each child in a list should have a unique "key" prop
-    //real world scenario each would have a unique id
+function List(props){
 
-    
+    /* REUSABLE LIST COMPONET USING PROPS*/
+
+        const category = props.category;
+        const itemList = props.items;
+
+        //sort with itemList NOT listItems
+
+        const listItems = itemList.map(item => <li key={item.id}>
+                        <b>{item.name}</b>: &nbsp;
+                        {item.calories}</li>);
+
+    return(
+        <>
+            <h3>{category}</h3>
+            <ul>{listItems}</ul>
+        </>);
+
+    /*
+
+    BASIC LIST COMPONET - NOT REUSABLE
+
     const fruits = [{id: 1, name: "apple", calories: 95},
                      {id: 2, name: "orange", calories: 45}, 
                      {id: 3, name: "banana", calories: 105}, 
                      {id: 4, name: "coconut", calories: 159}, 
                      {id: 5, name: "pineapple", calories: 37}];
 
+
     const listItems = fruits.map(fruit => <li key={fruit.id}>
                         <b>{fruit.name}</b>: &nbsp;
                         {fruit.calories}</li>);
+  
+  */
 
+
+  //each child in a list should have a unique "key" prop
+    //real world scenario each would have a unique id
 
     /*    SORTING
 
@@ -56,9 +79,11 @@ const listItems = highCalFruits.map(highCalFruit =>
                                      <b>{highCalFruit.name}</b>: &nbsp;
                                     {highCalFruit.calories}</li>);
 
+
+return(<ul>{listItems}</ul>);
+
     */
 
-    return(<ul>{listItems}</ul>);
 
 }
 

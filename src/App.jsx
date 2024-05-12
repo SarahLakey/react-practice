@@ -7,6 +7,19 @@ import List from './List/List.jsx'
 
 function App() {
 
+
+  const fruits = [{id: 1, name: "apple", calories: 95},
+                {id: 2, name: "orange", calories: 45}, 
+                 {id: 3, name: "banana", calories: 105}, 
+                 {id: 4, name: "coconut", calories: 159}, 
+                {id: 5, name: "pineapple", calories: 37}];
+
+  // const fruits = [{id: 1, name: "apple", calories: 95},
+  //               {id: 2, name: "orange", calories: 45}, 
+  //                {id: 3, name: "banana", calories: 105}, 
+  //                {id: 4, name: "coconut", calories: 159}, 
+  //               {id: 5, name: "pineapple", calories: 37}];
+
   return (
     <>
       <UserGreeting isLoggedIn={true} username="Sarah"/>
@@ -16,7 +29,7 @@ function App() {
 
       <ButtonInline/>
       <div>
-          <List/>
+          <List items={fruits} category="Fruits"/>
       </div>
       <div>
         <Student name="Shayne" age={1.5} isStudent={true}/>
