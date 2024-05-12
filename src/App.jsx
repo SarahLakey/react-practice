@@ -3,6 +3,7 @@ import Student from "./Student/Student"
 import './App.css'
 import ButtonInline from "./ButtonInline"
 import UserGreeting from './UserGreeting/UserGreeting.jsx'
+import List from './List/List.jsx'
 
 function App() {
 
@@ -14,6 +15,9 @@ function App() {
       </div>
 
       <ButtonInline/>
+      <div>
+          <List/>
+      </div>
       <div>
         <Student name="Shayne" age={1.5} isStudent={true}/>
         <Student name="Skylar" age={0} isStudent={false}/>
