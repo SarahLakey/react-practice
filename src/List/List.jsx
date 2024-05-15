@@ -1,3 +1,4 @@
+import styles from './List.module.css'
 
 function List(props){
 
@@ -14,8 +15,8 @@ function List(props){
 
     return(
         <>
-            <h3>{category}</h3>
-            <ul>{listItems}</ul>
+            <h3 className={styles.listCategory}>{category}</h3>
+            <ul className={styles.listItems}>{listItems}</ul>
         </>);
 
     /*
