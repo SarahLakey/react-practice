@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import styles from './List.module.css'
+
 
 function MyComponent() {
     const [foods, setFoods] = useState(["Apple", "Orange", "Banana"]);
@@ -26,14 +28,14 @@ function MyComponent() {
 
     return(
         <div>
-            <h2>List of Food</h2>
-            <ul> 
+            <h2 className={styles.listCategory}>List of Food</h2>
+            <ol className={styles.orderedListItems}> 
                 {foods.map((food,index) => 
                 <li key={index} onClick={() => handleRemoveFood(index)}>
                     {food}
                 </li>
             )}
-            </ul>
+            </ol>
             <input type="text" id="foodInput" placeholder="Enter food name"/>
             <button onClick={handleAddFood}>Add Food</button>
   

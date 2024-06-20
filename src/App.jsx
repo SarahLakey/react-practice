@@ -4,7 +4,7 @@ import './App.css'
 import ButtonInline from "./ButtonInline"
 import UserGreeting from './UserGreeting/UserGreeting.jsx'
 import List from './List/List.jsx'
-import MyComponent from './MyComponnt.jsx'
+import MyComponent from './List/MyComponent.jsx'
 
 function App() {
 
@@ -23,8 +23,6 @@ function App() {
 
   return (
     <>
-      <MyComponent/>
-      
       <UserGreeting isLoggedIn={true} username="Sarah"/>
       <div>
           <Card/>
@@ -33,11 +31,6 @@ function App() {
       <ButtonInline/>
       
       <div>
-          <List items={fruits} category="Fruits"/>
-          <List items={vegetables} category="Vegetables"/>
-
-      </div>
-      <div>
         <Student name="Shayne" age={1.5} isStudent={true}/>
         <Student name="Skylar" age={0} isStudent={false}/>
         <Student name="Jax" age={11} isStudent={false}/>
@@ -45,7 +38,13 @@ function App() {
         {/* <Student age={10}/> */}
 
       </div>
-      {/* <MyComponent/> */}
+      <div>
+          <List items={fruits} category="Fruits"/>
+          <List items={vegetables} category="Vegetables"/>
+
+      </div>
+
+      <MyComponent/>
     </>
   )
 }
