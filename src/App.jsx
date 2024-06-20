@@ -23,6 +23,8 @@ function App() {
 
   return (
     <>
+      <MyComponent/>
+      
       <UserGreeting isLoggedIn={true} username="Sarah"/>
       <div>
           <Card/>
@@ -43,7 +45,7 @@ function App() {
         {/* <Student age={10}/> */}
 
       </div>
-      <MyComponent/>
+      {/* <MyComponent/> */}
     </>
   )
 }
