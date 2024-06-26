@@ -5,6 +5,7 @@ import ButtonInline from "./ButtonInline"
 import UserGreeting from './UserGreeting/UserGreeting.jsx'
 import List from './List/List.jsx'
 import MyComponent from './List/MyComponent.jsx'
+import ToDoList from './ToDoList/ToDoList'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <>
+      <ToDoList/>
       <UserGreeting isLoggedIn={true} username="Sarah"/>
       <div>
           <Card/>
