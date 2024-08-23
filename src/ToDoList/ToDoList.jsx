@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 function ToDoList(){
 
-    const [tasks, setTasks] = useState([]);
+    const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "Walk the dogs"]);
     const [newTask, setNewTask] = useState("");
 
     //to see the text within the text box
@@ -42,6 +42,32 @@ function ToDoList(){
                     Add
                 </button>
             </div>
+
+            <ol>
+                {tasks.map((task, index) => 
+                    <li key={index}>
+                        <span className='text'>{task}</span>
+                        <button
+                            className='delete-button'
+                            onClick={() => deleteTask(index)}>
+                            ✄ Delete
+                        </button>
+
+                        <button
+                            className='move-button'
+                            onClick={() => moveTaskUp(index)}>
+                            ⬆️
+                        </button>
+                        {/* to add emoji: CTRL + CMD + Space */}
+
+                        <button
+                            className='move-button'
+                            onClick={() => moveTaskDown(index)}>
+                            ⬇️
+                        </button>
+                    </li>
+                )}
+            </ol>
     
             <h6>*Pending*</h6>
 
