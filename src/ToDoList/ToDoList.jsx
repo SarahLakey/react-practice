@@ -4,7 +4,10 @@ import styles from './ToDoList.module.css'
 
 function ToDoList(){
 
-    const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "Walk the dogs"]);
+    //hard code in some tasks for the array initially to test
+    // const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "Walk the dogs"]);
+
+    const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
 
     //to see the text within the text box
@@ -43,6 +46,12 @@ function ToDoList(){
 
     function moveTaskDown(index){
 
+        if(index < tasks.length - 1){
+            const updatedTasks = [...tasks];
+            [updatedTasks[index], updatedTasks[index + 1]] = 
+            [updatedTasks[index + 1], updatedTasks[index]];
+            setTasks(updatedTasks);
+        }
     }
 
     return(
