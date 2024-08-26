@@ -13,7 +13,13 @@ function ToDoList(){
     }
 
     function addTask(){
+        //to make sure that you have to actually add text vs just clicking the add button
 
+        //if after removing any white space this is strictly not equal to any empty string, then add a new task
+        if(newTask.trim() !== ""){
+            setTasks(t => [...t, newTask]);
+            setNewTask("");
+        }
     }
 
     function deleteTask(index){

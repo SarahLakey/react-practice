@@ -2,10 +2,13 @@
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 100px;
+    background-color: black;
 }
 
 h1{
     font-size: 4rem;
+    color: white;
+    padding-top: 15px;
 }
 
 button{
@@ -16,9 +19,64 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5 ease;
+    transition: background-color 0.5s ease;
 }
 
 .addButton{
-    background-color: rgb(15%, 175%, 15%);
+    background-color: rgb(23, 174, 23);
+}
+
+.addButton:hover{
+    background-color: green;
+}
+
+.deleteButton{
+    background-color: rgb(254, 22, 22);
+}
+
+.deleteButton:hover{
+    background-color: rgb(153, 10, 10);
+}
+
+.moveButton{
+    background-color: blue;
+}
+
+.moveButton:hover{
+    background-color: rgb(0, 0, 163);
+}
+
+input[type="text"]{
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0, 0%, 0%, 0.5)
+}
+
+ol{
+    padding: 0;
+}
+
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    border: 3px solid hsla(0, 0%, 85%, 0.75);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    flex: 1;
+    /* flex: 1 - pushes all the buttons to the right so the text takes up as much space as possible */
+}
+
+.deleteButton, .moveButton{
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
 }
