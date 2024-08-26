@@ -29,7 +29,7 @@ function ToDoList(){
     }
 
     return(
-        <div className='to-do-list'>
+        <div className={styles.toDoList}>
             <h1> To Do List: </h1>
             <div>
                 <input
@@ -39,7 +39,7 @@ function ToDoList(){
                     onChange={handleInputChange}
                     />
                 <button
-                className='add-button'
+                className={styles.addButton}
                 onClick={addTask}>
                     Add
                 </button>
@@ -48,22 +48,22 @@ function ToDoList(){
             <ol>
                 {tasks.map((task, index) => 
                     <li key={index}>
-                        <span className='text'>{task}</span>
+                        <span className={styles.text}>{task}</span>
                         <button
-                            className='delete-button'
+                            className={styles.deleteButton}
                             onClick={() => deleteTask(index)}>
                             ✄ Delete
                         </button>
 
                         <button
-                            className='move-button'
+                            className={styles.moveButton}
                             onClick={() => moveTaskUp(index)}>
                             ⬆️
                         </button>
                         {/* to add emoji: CTRL + CMD + Space */}
 
                         <button
-                            className='move-button'
+                            className={styles.moveButton}
                             onClick={() => moveTaskDown(index)}>
                             ⬇️
                         </button>

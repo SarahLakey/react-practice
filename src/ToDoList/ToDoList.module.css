@@ -1,4 +1,4 @@
-.to-do-list{
+.toDoList{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 100px;
@@ -6,4 +6,19 @@
 
 h1{
     font-size: 4rem;
+}
+
+button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+
+.addButton{
+    background-color: rgb(15%, 175%, 15%);
 }
