@@ -30,7 +30,15 @@ function ToDoList(){
     }
 
     function moveTaskUp(index){
+        //check to see if index is greater than 0 -- if its already at the top, we don't need to move it up further
+        //this code will swap 2 elements in an array
 
+        if(index > 0){
+            const updatedTasks = [...tasks];
+            [updatedTasks[index], updatedTasks[index - 1]] = 
+            [updatedTasks[index - 1], updatedTasks[index]];
+            setTasks(updatedTasks);
+        }
     }
 
     function moveTaskDown(index){
