@@ -6,6 +6,7 @@ import UserGreeting from './UserGreeting/UserGreeting.jsx'
 import List from './List/List.jsx'
 import MyComponent from './List/MyComponent.jsx'
 import ToDoList from './ToDoList/ToDoList'
+import Count from "./Count/Count.jsx"
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <Count/>
       <ToDoList/>
       <UserGreeting isLoggedIn={true} username="Sarah"/>
       <div>
